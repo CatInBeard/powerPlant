@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('root.show');
+Route::get('locales/{locale}', function ($locale) {
+    if (in_array($locale, \Config::get('app.locales'))) {   # Check if exists language
+    	Session::put('locale', $locale);                    # Set language to session
+    }
+    return redirect()->back();                              # Go back
+})->name('languages.set');
+Route::get('/locales', function () {
+    return view('languages', ["languages"=>Config::get('app.locales')]);
+})->name('languages.show');
