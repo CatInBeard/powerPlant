@@ -20,16 +20,16 @@ test:
 	php artisan test
 
 coverage:
-	php artisan test --coverage-clover ./build/logs/clover.xml
+	php artisan tests --coverage-clover ./build/logs/clover.xml
 
 docker:
 	docker build -t catinbeard/powerplant:latest .
 
 lint:
-	composer phpcs -- --standard=PSR12 app routes tests
+	composer exec --verbose phpcs -- --standard=PSR12 app/Http/Controllers tests
 
 lint-fix:
-	composer phpcbf app/Http/Controllers tests
+	composer exec --verbose phpcbf -- --standard=PSR12 app/Http/Controllers tests
 
 logs:
 	tail -f storage/logs/laravel.log

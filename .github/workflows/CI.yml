@@ -1,4 +1,4 @@
-name: Linter test
+name: CI
 on: [push]
 jobs:
   Explore-GitHub-Actions:
