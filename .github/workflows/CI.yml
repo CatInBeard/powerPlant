@@ -1,0 +1,10 @@
+name: Linter test
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: make setup
+      - run: make lint
+      - run: make test
