@@ -1,0 +1,6 @@
+vendor
+.git
+README.md
+Dockerfile
+.dockerignore
+.gitignore
