@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\WelcomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('root.show');
-Route::get('locales/{locale}', function ($locale) {
-    if (in_array($locale, \Config::get('app.locales'))) {   # Check if exists language
-    	Session::put('locale', $locale);                    # Set language to session
-    }
-    return redirect()->back();                              # Go back
-})->name('languages.set');
-Route::get('/locales', function () {
-    return view('languages', ["languages"=>Config::get('app.locales')]);
-})->name('languages.show');
+Route::get('/', [WelcomeController::class, 'show'])
+->name('root.show');
+Route::get('/login', [LoginController::class, 'show'])
+->name('login.show');
+Route::post('/login', [LoginController::class, 'authenticate'])
+->name('login.post');
+Route::get('/logout', [LoginController::class, 'logout'])
+->name('login.delete');
+Route::get('locales/{locale}', [LanguageController::class, 'setLang'])
+->name('languages.set');
+Route::get('/locales', [LanguageController::class, 'show'])->name('languages.show');
