@@ -11,7 +11,7 @@ class WelcomeController extends Controller
     public function show()
     {
         $isAuth = Auth::check();
-        $params = ["isAuth"=>$isAuth];
+        $params = ["isAuth" => $isAuth];
         if ($isAuth) {
             $params['user'] = Auth::user();
         }
