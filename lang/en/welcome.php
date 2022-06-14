@@ -11,5 +11,8 @@ return [
     "itWorks" => "It works!",
     "chooseLanguage" => "Choose language:",
     "goRoot" => "Main page",
-    "changeLang" => "click here to change language"
+    "changeLang" => "click here to change language",
+    "login" => "Log in",
+    "logout" => "Log out",
+    "hello" => "hello, :name"
 ];
