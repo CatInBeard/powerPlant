@@ -28,7 +28,7 @@ Route::get('/logout', [LoginController::class, 'logout'])
 ->name('login.delete');
 Route::get('/signup', [RegController::class, 'show'])
 ->name('reg.show');
-Route::post('/signup', [RegController::class, 'authenticate'])
+Route::post('/signup', [RegController::class, 'signup'])
 ->name('reg.post');
 Route::get('locales/{locale}', [LanguageController::class, 'setLang'])
 ->name('languages.set');
