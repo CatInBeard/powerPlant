@@ -30,7 +30,7 @@ class RegController extends Controller
         $credentials['password'] = Hash::make($credentials['password']);
         $user = User::create($credentials);
 
-        if(Auth::attempt($auth)) {
+        if (Auth::attempt($auth)) {
             $request->session()->regenerate();
             return redirect()->intended(route('root.show'));
         }
