@@ -14,5 +14,6 @@ return [
     "changeLang" => "click here to change language",
     "login" => "Log in",
     "logout" => "Log out",
-    "hello" => "hello, :name"
+    "hello" => "hello, :name",
+    "reg" => "Sign up"
 ];
