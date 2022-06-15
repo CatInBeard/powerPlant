@@ -12,4 +12,5 @@ Opensourse plant managment website
 The Powerplant project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Docker
+Page on [dockerhub](https://hub.docker.com/repository/docker/catinbeard/powerplant)  
 to install: `docker run -p 80:80 -d catinbeard/powerplant:latest`
