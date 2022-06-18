@@ -14,3 +14,6 @@ The Powerplant project is open-sourced software licensed under the [MIT license]
 ## Docker
 Page on [dockerhub](https://hub.docker.com/repository/docker/catinbeard/powerplant)  
 to install: `docker run -p 80:80 -d catinbeard/powerplant:latest`
+
+## Live testing
+`make serve`
