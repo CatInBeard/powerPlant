@@ -1,0 +1,51 @@
+$header-h: 80px;
+header {
+    background: white;
+    height: $header-h;
+    @include flex-container(row, space-between);
+}
+
+$margin-button: 18px;
+.button-reg,
+.button-log {
+    margin: $margin-button 0;
+}
+
+.button-reg {
+    @include font(22px, 550, white, 22px, 0);
+    background: $light-purple;
+    text-decoration: none;
+    padding: 7px 20px 0;
+    border-radius: 100px;
+}
+
+.button-reg:hover,
+.button-reg:active {
+    background: $purple;
+}
+
+.button-log {
+    @include font(22px, 550, $light-purple, 22px, 0);
+    border: 3px solid $light-purple;
+    text-decoration: none;
+    padding: 4px 14px 3px;
+    border-radius: 100px;
+}
+
+.button-log:hover,
+.button-log:active {
+    @include font(22px, 550, $purple, 22px, 0);
+    border: 3px solid $purple;
+}
+
+$lang-size: 25px;
+.language-img {
+    height: $lang-size;
+    width: $lang-size;
+}
+
+$logo-h: 65px;
+.logo {
+    height: $logo-h;
+    margin-top: calc($header-h * 0.5 - $logo-h * 0.5);
+}

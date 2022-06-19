@@ -17,3 +17,6 @@ to install: `docker run -p 80:80 -d catinbeard/powerplant:latest`
 
 ## Live testing
 `make serve`
+
+## Build
+`make sass` (required sass, to install `npm install -g sass`)

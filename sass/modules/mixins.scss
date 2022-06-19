@@ -1,0 +1,23 @@
+@mixin font($size, $weight, $color, $line-height, $spacing) {
+    font-family: Montserrat, sans-serif;
+    color: $color;
+    font-weight: $weight;
+    line-height: $line-height;
+    font-size: $size;
+    letter-spacing: $spacing;
+}
+
+.hidden-on {
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-container($flex-direction, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}

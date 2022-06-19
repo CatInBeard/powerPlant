@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Montserrat, sans-serif;
+  src: url("font/Montserrat/Montserrat-Regular.ttf");
+}
+.hidden-on {
+  visibility: hidden;
+  display: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: white;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-reg,
+.button-log {
+  margin: 18px 0;
+}
+
+.button-reg {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-weight: 550;
+  line-height: 22px;
+  font-size: 22px;
+  letter-spacing: 0;
+  background: #cbc2ff;
+  text-decoration: none;
+  padding: 7px 20px 0;
+  border-radius: 100px;
+}
+
+.button-reg:hover,
+.button-reg:active {
+  background: #9a6ae6;
+}
+
+.button-log {
+  font-family: Montserrat, sans-serif;
+  color: #cbc2ff;
+  font-weight: 550;
+  line-height: 22px;
+  font-size: 22px;
+  letter-spacing: 0;
+  border: 3px solid #cbc2ff;
+  text-decoration: none;
+  padding: 4px 14px 3px;
+  border-radius: 100px;
+}
+
+.button-log:hover,
+.button-log:active {
+  font-family: Montserrat, sans-serif;
+  color: #9a6ae6;
+  font-weight: 550;
+  line-height: 22px;
+  font-size: 22px;
+  letter-spacing: 0;
+  border: 3px solid #9a6ae6;
+}
+
+.language-img {
+  height: 25px;
+  width: 25px;
+}
+
+.logo {
+  height: 65px;
+  margin-top: 7.5px;
+}
+
+body {
+  background: black;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -8,12 +8,14 @@ return [
     | The following language lines are used for root page
     |
     */
-    "itWorks" => "It works!",
+    "login" => "log in",
+    "logout" => "log out",
+    "hello" => "hello, :name",
+    "reg" => "sign up",
+    "currentlanguage" => "en",
+
     "chooseLanguage" => "Choose language:",
     "goRoot" => "Main page",
-    "changeLang" => "click here to change language",
-    "login" => "Log in",
-    "logout" => "Log out",
-    "hello" => "hello, :name",
-    "reg" => "Sign up"
+    "changeLang" => "click here to change language"
+    
 ];
